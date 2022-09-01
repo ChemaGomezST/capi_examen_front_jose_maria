@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Fecha nacimiento</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Direccion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users;">
+        <td>{{user.fecha_nacimiento}}</td>
+        <td>{{user.edad}}</td>
+        <td>{{user.domicilio}} {{user.numero_exterior}}  {{user.colonia}} {{user.cp}} {{user.ciudad}}</td>
+      </tr>
+    </tbody>
+  </table>
